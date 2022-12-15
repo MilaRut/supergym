@@ -1,0 +1,31 @@
+.btn {
+  background-color: $color-transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  @include font-settings($ff-roboto, 700, 12px, 1.16, $color-default-white);
+
+  &--white {
+    color: $color-default-white;
+    border: 4px solid $color-default-white;
+  }
+
+  &--blue {
+    color: $color-sapphire;
+    border: 2px solid $color-sapphire;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
