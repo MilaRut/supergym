@@ -43,18 +43,17 @@
 }
 
 .intro__item {
-    @include font-settings($ff-roboto, 400, 14px, 1.5, $color-default-white);
+    @include font-roboto (400, 14px, 1.5, $color-default-white);
 }
 
 .intro p {
-    @include font-settings($ff-alumni, 600, 40px, 1.2, $color-default-white);
+    @include font-alumni (600, 48px, 1.2, $color-default-white);
     margin: 0;
-    letter-spacing: 0.07em;
-    text-transform: uppercase;
+    letter-spacing: 0.03em;
     text-align: end;
-    padding-top: 118px;
-    padding-right: 114px;
-    margin-bottom: 20px;
+    padding-top: 111px;
+    padding-right: 115px;
+    margin-bottom: 14px;
 
     @include vp-1199 {
         font-size: 28px;
@@ -72,9 +71,9 @@
 }
 
 .intro h1 {
-    @include font-settings($ff-alumni, 700, 99px, 1.1, $color-default-white);
+    @include font-alumni (700, 93px, 1.2, $color-default-white);
     margin: 0;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.046em;
     text-transform: uppercase;
     text-align: end;
     padding-right: 64px;

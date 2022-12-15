@@ -1,0 +1,12 @@
+.abonements {
+    background-color: $color-ghost-white;
+    padding-top: 150px;
+}
+
+.abonements h2 {
+    margin: 0;
+    text-align: center;
+
+    @include font-alumni (600, 54px, 1.2, $color-sapphire);
+}
+

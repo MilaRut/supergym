@@ -7,7 +7,7 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  @include font-settings($ff-roboto, 700, 12px, 1.16, $color-default-white);
+  @include font-roboto(700, 12px, 1.16, $color-default-white);
 
   &--white {
     color: $color-default-white;

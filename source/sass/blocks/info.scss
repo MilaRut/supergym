@@ -1,0 +1,127 @@
+.info .container {
+  position: relative;
+  display: flex;
+  padding-top: 120px;
+  padding-bottom: 235px;
+
+  @include vp-1199 {
+    flex-direction: column;
+    padding-top: 101px;
+    padding-bottom: 116px;
+  }
+
+  @include vp-767 {}
+}
+
+.info__content {
+  max-width: 450px;
+  margin-right: auto;
+  padding-left: 60px;
+  padding-right: 40px;
+
+  @include vp-1199 {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+.info__content h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  padding-top: 38px;
+  letter-spacing: 0.03em;
+  @include font-alumni (600, 48px, 1.2, $color-sapphire);
+
+  @include vp-1199 {
+    @include font-alumni (600, 42px, 1.19, $color-sapphire);
+    margin: 0;
+    padding-top: 0;
+    padding-right: 36px;
+  }
+
+}
+
+.info__content h3 {
+  margin: 0;
+  margin-bottom: 37px;
+  @include font-roboto (400, 18px, 1.5, $color-sapphire);
+
+  @include vp-1199 {
+    padding-right: 19px;
+    margin-bottom: 33px;
+  }
+}
+
+.info__content p {
+  margin: 0;
+  margin-bottom: 8px;
+  @include font-roboto (300, 16px, 1.5, $color-sapphire);
+
+  @include vp-1199 {
+    margin-bottom: 24px;
+    padding-right: 20px;
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+// .info__img-wrapper {
+//   max-width: 660px;
+//   max-height: 401px;
+//   overflow: hidden;
+
+//   @include vp-1199 {
+//     max-height: 345px;
+//   }
+
+// }
+
+// .info__img {
+//   width: 100%;
+//   height: 100%;
+//   object-fit: cover;
+//   object-position: 0 95%;
+
+//   @include vp-1199 {
+//     min-width: 678px;
+//     object-fit: cover;
+//     transform: scale(1.13, 1.1);
+//     object-position: 0 65%;
+//   }
+// }
+
+.info__img-wrapper {
+  overflow: hidden;
+  max-height: 401px;
+}
+
+.info__img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 0 95%;
+
+  @include vp-1199 {
+    width: 679px;
+    height: 384px;
+    transform: scale(1.14, 0.9);
+    object-position: -40px -25px;
+    margin: 0 auto;
+  }
+}
+
+.info__video-wrapper {
+  position: absolute;
+  top: 54%;
+  left: 39.5%;
+  min-width: 364px;
+  min-height: 228px;
+
+  @include vp-1199 {
+    top: 72.8%;
+    left: 32.7%;
+    min-width: 266px;
+    min-height: 167px;
+  }
+}

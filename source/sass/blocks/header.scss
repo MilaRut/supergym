@@ -58,7 +58,7 @@
 
 .header__tel {
 
-    @include font-settings ($ff-alumni, 600, 26px, 1.19, $color-default-white);
+    @include font-alumni (600, 26px, 1.19, $color-default-white);
 
     letter-spacing: 0.03em;
     padding-top: 1px;
