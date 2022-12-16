@@ -10,7 +10,10 @@
     padding-bottom: 116px;
   }
 
-  @include vp-767 {}
+  @include vp-767 {
+    padding: 63px 0;
+    padding-bottom: 277px;
+  }
 }
 
 .info__content {
@@ -23,6 +26,11 @@
     max-width: 100%;
     text-align: center;
   }
+
+  @include vp-767 {
+    text-align: start;
+    padding: 0 15px;
+  }
 }
 
 .info__content h2 {
@@ -30,32 +38,44 @@
   margin-bottom: 10px;
   padding-top: 38px;
   letter-spacing: 0.03em;
-  @include font-alumni (600, 48px, 1.2, $color-sapphire);
+  @include font-settings ($ff-alumni, 600, 48px, 1.2, $color-sapphire);
 
   @include vp-1199 {
-    @include font-alumni (600, 42px, 1.19, $color-sapphire);
+    font-size: 42px;
+    line-height: 1.19;
     margin: 0;
     padding-top: 0;
     padding-right: 36px;
   }
 
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 1.19;
+    margin-bottom: 6px;
+  }
 }
 
 .info__content h3 {
   margin: 0;
   margin-bottom: 37px;
-  @include font-roboto (400, 18px, 1.5, $color-sapphire);
+  @include font-settings ($ff-roboto, 400, 18px, 1.5, $color-sapphire);
 
   @include vp-1199 {
     padding-right: 19px;
     margin-bottom: 33px;
+  }
+
+  @include vp-767 {
+    font-size: 18px;
+    padding: 0;
+    margin-bottom: 23px;
   }
 }
 
 .info__content p {
   margin: 0;
   margin-bottom: 8px;
-  @include font-roboto (300, 16px, 1.5, $color-sapphire);
+  @include font-settings ($ff-roboto, 300, 16px, 1.5, $color-sapphire);
 
   @include vp-1199 {
     margin-bottom: 24px;
@@ -65,36 +85,19 @@
       display: none;
     }
   }
+
+  @include vp-767 {
+    margin-bottom: 33px;
+  }
 }
-
-// .info__img-wrapper {
-//   max-width: 660px;
-//   max-height: 401px;
-//   overflow: hidden;
-
-//   @include vp-1199 {
-//     max-height: 345px;
-//   }
-
-// }
-
-// .info__img {
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-//   object-position: 0 95%;
-
-//   @include vp-1199 {
-//     min-width: 678px;
-//     object-fit: cover;
-//     transform: scale(1.13, 1.1);
-//     object-position: 0 65%;
-//   }
-// }
 
 .info__img-wrapper {
   overflow: hidden;
   max-height: 401px;
+
+  @include vp-767 {
+    max-height: 313px;
+  }
 }
 
 .info__img {
@@ -109,6 +112,14 @@
     object-position: -40px -25px;
     margin: 0 auto;
   }
+
+  @include vp-767 {
+    min-width: 100%;
+    height: 384px;
+    transform: none;
+    object-position: right 10%;
+    margin: 0;
+  }
 }
 
 .info__video-wrapper {
@@ -117,11 +128,19 @@
   left: 39.5%;
   min-width: 364px;
   min-height: 228px;
+  overflow: hidden;
 
   @include vp-1199 {
     top: 72.8%;
     left: 32.7%;
     min-width: 266px;
     min-height: 167px;
+  }
+
+  @include vp-767 {
+    top: 74.3%;
+    left: 0;
+    min-width: 100%;
+    max-height: 167px;
   }
 }

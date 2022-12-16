@@ -24,11 +24,12 @@ $color-ghost-white:                 #f8f9fc;
 $color-spindle:                     #b6bdcc;
 $color-crimson:                     #d10a42;
 
-$color-sapphire-opacity-50:         fade-out (#102654, 0.5);
-$color-sapphire-opacity-89:         fade-out (#102654, 0.11);
-$color-dark-cerulean-opacity-50:    fade-out (#14367a, 0.5);
-$color-grey-opacity-20:             fade-out (#787878, 0.8);
-$color-crimson-opacity-20:          fade-out (#ed0233, 0.8);
+$color-sapphire-opacity-50:         fade-out($color-sapphire, 0.5);
+$color-sapphire-opacity-89:         fade-out($color-sapphire, 0.11);
+$color-dark-cerulean-opacity-50:    fade-out(#14367a, 0.5);
+$color-grey-opacity-20:             fade-out(#787878, 0.8);
+$color-crimson-opacity-20:          fade-out($color-crimson, 0.8);
+$color-whisper-opacity-48:          fade-out($color-whisper, 0.52);
 
 
 // Gradient

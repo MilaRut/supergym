@@ -10,7 +10,7 @@
     }
 
     @include vp-767 {
-        min-height: 491px;
+        min-height: 492px;
         padding-top: 15px;
         background: conic-gradient(from 171.43deg at 35.31% 34.22%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
     }
@@ -58,7 +58,7 @@
 
 .header__tel {
 
-    @include font-alumni (600, 26px, 1.19, $color-default-white);
+    @include font-settings ($ff-alumni, 600, 26px, 1.19, $color-default-white);
 
     letter-spacing: 0.03em;
     padding-top: 1px;

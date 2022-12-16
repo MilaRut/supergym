@@ -1,4 +1,5 @@
 .btn {
+  @include font-settings ($ff-roboto, 700, 12px, 1.16, $color-default-white);
   background-color: $color-transparent;
   display: flex;
   align-items: center;
@@ -7,7 +8,6 @@
   text-transform: uppercase;
   cursor: pointer;
 
-  @include font-roboto(700, 12px, 1.16, $color-default-white);
 
   &--white {
     color: $color-default-white;
@@ -17,15 +17,5 @@
   &--blue {
     color: $color-sapphire;
     border: 2px solid $color-sapphire;
-  }
-
-  &:disabled {
-    opacity: 0.5;
-
-    pointer-events: none;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
   }
 }

@@ -1,12 +1,22 @@
 .abonements {
-    background-color: $color-ghost-white;
-    padding-top: 150px;
+  position: relative;
+  background-color: $color-ghost-white;
+  padding: 120px 0;
+
+  &::after {
+    position: absolute;
+    content: url("../../img/abonements.png");
+    bottom: -157px;
+    right: 0;
+  }
 }
 
 .abonements h2 {
-    margin: 0;
-    text-align: center;
+  margin: 0 0 12px;
+  padding-right: 5px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-    @include font-alumni (600, 54px, 1.2, $color-sapphire);
+  @include font-settings ($ff-alumni, 600, 54px, 1.2, $color-sapphire);
 }
 

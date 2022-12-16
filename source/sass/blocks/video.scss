@@ -28,11 +28,10 @@
 
 .video__btn {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 28.2%;
+    left: 36.4%;
     width: 100px;
     height: 100px;
-    transform: translate(-50%, -50%);
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -43,7 +42,13 @@
     @include vp-1199 {
       width: 73px;
       height: 73px;
-      transform: translate(-51.5%,-51.2%);
+      top: 28%;
+      left: 35.8%;
+    }
+
+    @include vp-767 {
+      top: 23.5%;
+      left: 38.7%;
     }
 }
 
