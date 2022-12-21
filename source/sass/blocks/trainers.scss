@@ -1,0 +1,66 @@
+.trainers {
+  padding: 67px 0;
+  overflow: hidden;
+
+  @include vp-1199 {
+    padding: 60px 0;
+  }
+}
+
+.trainers .container {
+  position: relative;
+  overflow: hidden;
+}
+
+.trainers h2 {
+  @include font-settings ($ff-alumni, 600, 54px, 1.2, $color-sapphire);
+  letter-spacing: 0.03em;
+  padding-left: 2px;
+  margin: 0 0 47px 0;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 1.19;
+    text-align: center;
+    padding-right: 8px;
+    margin-bottom: 31px;
+  }
+}
+
+.trainers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.trainers__nav-btn {
+  position: absolute;
+  width: 103px;
+  height: 300px;
+  top: 110px;
+  border: 5px solid $color-default-white;
+  background-color: $color-default-white;
+  z-index: 10;
+  cursor: pointer;
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+    transform: scale(-1, 1);
+  }
+
+  @include vp-1199 {
+    width: 101px;
+    top: 80px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}

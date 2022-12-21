@@ -9,11 +9,10 @@
 .tabs__list {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
   min-width: 387px;
   margin: 0 0 46px;
   padding: 0;
-  list-style: none;
 
   &::after {
     position: absolute;
@@ -24,13 +23,56 @@
     height: 2px;
     background-color: $color-grey-opacity-20;
   }
+
+  @include vp-1199 {
+    min-width: 332px;
+    margin-bottom: 52px;
+
+    &::after {
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  @include vp-767 {
+    min-width: 290px;
+    margin-bottom: 42px;
+  }
 }
 
 .tab__item {
   @include font-settings ($ff-roboto, 400, 20px, 1.5, $color-sapphire-opacity-50);
+  background-color: transparent;
+  border: none;
   position: relative;
   cursor: pointer;
   padding: 5px 24px;
+
+  @include vp-1199 {
+    font-size: 18px;
+    padding: 5px 0;
+
+    &:not(:first-child) {
+      padding-left: 23px;
+    }
+
+    &:not(:last-child) {
+      padding-right: 32px;
+    }
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+    padding: 5px 0;
+
+    &:not(:first-child) {
+      padding-left: 23px;
+    }
+
+    &:not(:last-child) {
+      padding-right: 23px;
+    }
+  }
 }
 
 .tab__item.is-active {
@@ -44,6 +86,48 @@
     width: calc(100% - 48px);
     height: 2px;
     background-color: $color-crimson;
+
+    @include vp-1199 {
+      left: 0;
+      width: calc(100% - 31px);
+    }
+
+    @include vp-767 {
+      left: 0;
+      width: calc(100% - 16px);
+    }
+  }
+}
+
+.tab__item--6.is-active {
+  @include vp-1199 {
+    &::after {
+      left: 23px;
+      width: calc(100% - 45px);
+    }
+  }
+
+  @include vp-767 {
+    &::after {
+      left: 20px;
+      width: calc(100% - 38px);
+    }
+  }
+}
+
+.tab__item--12.is-active {
+  @include vp-1199 {
+    &::after {
+      left: 25px;
+      width: calc(100% - 25px);
+    }
+  }
+
+  @include vp-767 {
+    &::after {
+      left: 20px;
+      width: calc(100% - 20px);
+    }
   }
 }
 
@@ -58,7 +142,7 @@
 
 .tabs__content.is-active {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -72,9 +156,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 360px;
+  min-width: 31%;
   min-height: 448px;
   padding-top: 56px;
+  margin-bottom: 20px;
   background-color: $color-default-white;
   z-index: 1;
   border: 7px solid $color-default-white;
@@ -86,16 +171,47 @@
     border-width: 7px;
     border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
   }
+
+  &:not(:nth-child(3n)) {
+    margin-right: 3.5%;
+
+    @include vp-1199 {
+      margin-right: 0;
+    }
+  }
+
+  @include vp-1199 {
+    min-width: 442px;
+    align-self: center;
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+
+  @include vp-767 {
+    min-width: 100%;
+    min-height: 384px;
+    padding-top: 44px;
+    margin-bottom: 35px;
+  }
 }
 
 .tabs__content-item h3 {
   @include font-settings ($ff-roboto, 700, 26px, 1.12, $color-sapphire);
   margin: 0 0 10px;
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 1.1;
+  }
 }
 
 .tabs__content-item p {
   @include font-settings ($ff-roboto, 400, 16px, 1.5, $color-chambray);
   margin: 0 0 65px;
+
+  @include vp-767 {
+    margin-bottom: 53px;
+  }
 }
 
 .tabs__content-item span {
@@ -107,7 +223,7 @@
   &::before {
     @include font-settings ($ff-roboto, 700, 100px, 1.5, $color-whisper-opacity-48);
     position: absolute;
-    content: attr(title);
+    content: attr(value);
     top: -54px;
     right: -16px;
     z-index: -1;
@@ -119,18 +235,39 @@
     top: 0;
     right: 0;
   }
+
+  @include vp-767 {
+    font-size: 48px;
+    padding-right: 32px;
+    margin-bottom: 30px;
+
+    &::before {
+      font-size: 80px;
+      top: -44px;
+    }
+
+    &::after {
+      transform: scale(0.79);
+      top: 4px;
+      right: -6px;
+    }
+  }
 }
 
 .tabs__btn {
   @include font-settings ($ff-roboto, 700, 12px, 1.16, $color-sapphire);
-  width: 208px;
+  min-width: 208px;
   height: 66px;
   padding-top: 3px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
+
+  @include vp-767 {
+    width: calc(100% - 112px);
+  }
 }
 
-.tabs__content-item:hover > .tabs__btn,
+.tabs__content-item:hover>.tabs__btn,
 .tabs__btn:focus-visible {
   color: $color-default-white;
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);

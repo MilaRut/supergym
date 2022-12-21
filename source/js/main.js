@@ -2,12 +2,13 @@ import {iosVhFix} from './utils/ios-vh-fix';
 // import {initModals} from './modules/modals/init-modals';
 import {setupVideo} from './modules/video';
 import {initTabs} from './modules/tabs';
+import {initSwiper} from './modules/slider';
 
 
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
-
+  const swiper = document.querySelector('.swiper');
   // Utils
   // ---------------------------------
 
@@ -22,6 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     // initModals();
     setupVideo();
     initTabs();
+    initSwiper(swiper);
 
   });
 });
