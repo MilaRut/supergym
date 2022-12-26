@@ -29,7 +29,8 @@ const initSwiper = (swiper) => {
 
         768: {
           slidesPerView: 2,
-          spaceBetween: 40,
+          slidesPerGroup: 2,
+          spaceBetween: 30,
           initialSlide: 2,
         },
 

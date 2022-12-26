@@ -1,0 +1,17 @@
+.socials__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.socials__item {
+  width: 25;
+  height: 25px;
+  background-color: $color-default-white;
+  border-radius: 50%;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 11px;
+}
