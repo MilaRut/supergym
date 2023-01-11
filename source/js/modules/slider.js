@@ -13,6 +13,7 @@ const initSwiper = (swiper) => {
       loop: true,
 
       breakpoints: {
+
         280: {
           slidesPerView: 1,
           slidesPerGroup: 1,
@@ -29,14 +30,14 @@ const initSwiper = (swiper) => {
 
         768: {
           slidesPerView: 2,
-          slidesPerGroup: 2,
-          spaceBetween: 30,
+          slidesPerGroup: 1,
+          spaceBetween: 35,
           initialSlide: 2,
         },
 
         1200: {
           slidesPerView: 4,
-          slidesPerGroup: 4,
+          slidesPerGroup: 1,
           spaceBetween: 40,
           initialSlide: 0,
         },

@@ -1,13 +1,13 @@
 .trainers {
-  padding: 67px 0;
+  padding: 67px 0 92px;
   overflow: hidden;
 
   @include vp-1199 {
-    padding: 60px 0;
+    padding: 60px 0 101px;
   }
 
   @include vp-767 {
-    padding: 0 0 70px;
+    padding: 23px 0 70px;
   }
 }
 
@@ -29,6 +29,27 @@
     padding-right: 8px;
     margin-bottom: 31px;
   }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 1.18;
+    margin-bottom: 42px;
+  }
+}
+
+.trainers__swiper-wrapper {
+  position: relative;
+  width: 93.11%;
+  max-width: 1272px;
+  margin: 0 auto;
+
+  @include vp-1199 {
+    width: 88.28%;
+  }
+
+  @include vp-767 {
+    width: 90.62%;
+  }
 }
 
 .trainers__list {
@@ -37,13 +58,17 @@
   list-style: none;
   display: flex;
   justify-content: flex-start;
+
+  // @include vp-767 {
+  //   padding-right: 33px;
+  // }
 }
 
 .trainers__nav-btn {
   position: absolute;
   width: 103px;
-  height: 300px;
-  top: 110px;
+  height: 314px;
+  top: 125px;
   border: 5px solid $color-default-white;
   background-color: $color-default-white;
   z-index: 10;
@@ -60,7 +85,11 @@
 
   @include vp-1199 {
     width: 101px;
-    top: 80px;
+    top: 101px;
+  }
+
+  @include vp-767 {
+    width: 47px;
   }
 }
 

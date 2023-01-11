@@ -1,0 +1,230 @@
+.actions .container {
+  padding-top: 149px;
+  padding-bottom: 60px;
+
+  @include vp-1199 {
+    padding-top: 92px;
+  }
+
+  @include vp-767 {
+    padding-top: 65px;
+    padding-bottom: 10px;
+  }
+}
+
+.actions h2 {
+  @include font-settings ($ff-alumni, 600, 54px, 1.2, $color-sapphire);
+  letter-spacing: 0.03em;
+  margin: 0 0 33px;
+  text-align: center;
+
+  @include vp-1199 {
+    font-size: 42px;
+    line-height: 1.19;
+    margin-bottom: 39px;
+    padding-right: 9px;
+  }
+
+  @include vp-767 {
+    font-size: 32px;
+    line-height: 1.18;
+    padding: 0 6px 0 0;
+    margin-bottom: 42px;
+  }
+}
+
+.actions__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.actions__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+
+  @include vp-1199 {
+    grid-template-columns: 678px;
+    grid-template-rows: repeat(2, auto);
+    column-gap: 0;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.actions__left-col {
+  display: flex;
+
+  @include vp-1199 {
+    grid-row: 1 / 2;
+    margin-bottom: 30px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.actions__text {
+  width: 50%;
+  background-color: $color-torch-red;
+  padding: 40px 0 39px 45px;
+
+  @include vp-1199 {
+    max-width: 279px;
+  }
+
+  @include vp-767 {
+    min-width: 91vw;
+    text-align: center;
+    padding: 41px 0 38px;
+  }
+}
+
+.actions__text h3 {
+  @include font-settings ($ff-roboto, 700, 28px, 1, $color-default-white);
+  margin: 0 0 4px;
+
+  @include vp-767 {
+    margin: 0 0 3px;
+  }
+}
+
+.actions__text h4 {
+  @include font-settings ($ff-roboto, 700, 70px, 1, $color-default-white);
+  margin: 0 0 19px;
+
+  @include vp-767 {
+    margin: 0 0 14px;
+  }
+}
+
+.actions__text p {
+  @include font-settings ($ff-roboto, 400, 18px, 1.4, $color-default-white);
+  margin: 0 0 189px;
+
+  @include vp-767 {
+    margin: 0 0 32px;
+  }
+}
+
+.actions__image {
+  width: 50%;
+  overflow: hidden;
+
+  @include vp-1199 {
+    width: 399px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+  }
+}
+
+.actions__image img {
+  object-fit: cover;
+  transform: scale(1.4);
+  object-position: 17px -62px;
+
+  @include vp-1199 {
+    transform: scale(1.2);
+    object-position: 28px -131px;
+    min-width: 399px;
+    max-height: 462px;
+  }
+
+  @include vp-767 {
+    object-position: 19px -103px;
+    min-width: 91vw;
+    max-height: 93.6vw;
+  }
+}
+
+.actions__right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include vp-1199 {
+    flex-direction: row;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.actions__action {
+  padding: 19px 28px;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 7px;
+  border-image-source: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+
+  @include vp-1199 {
+    min-width: 324px;
+    width: 40%;
+    padding: 19px 28px 20px;
+
+    &--first p {
+      padding-right: 80px;
+      margin-bottom: 51px;
+    }
+
+    &--second p {
+      margin-bottom: 73px;
+    }
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    padding: 30px 42px 31px;
+    min-width: 91vw;
+    width: 100%;
+    text-align: center;
+
+    &--first p {
+      padding-right: 0;
+      margin-bottom: 28px;
+    }
+
+    &--second p {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.actions__action h3 {
+  @include font-settings ($ff-roboto, 700, 26px, 1.5, $color-resolution-blue);
+  margin: 0 0 2px;
+
+  @include vp-767 {
+    margin: 0 0 3px;
+  }
+}
+
+.actions__action p {
+  @include font-settings ($ff-roboto, 400, 16px, 1.4, $color-resolution-blue);
+  margin: 0 0 75px;
+}
+
+.actions__link {
+  @include font-settings ($ff-roboto, 700, 12px, 1.16, $color-resolution-blue);
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: underline;
+  margin-bottom: 7px;
+
+  &--accent {
+    color: $color-default-white;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}

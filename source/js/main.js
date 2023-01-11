@@ -3,6 +3,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {setupVideo} from './modules/video';
 import {initTabs} from './modules/tabs';
 import {initSwiper} from './modules/slider';
+import {initSlider} from './modules/reviews-slider';
 
 
 // ---------------------------------
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     setupVideo();
     initTabs();
     initSwiper(swiper);
+    initSlider();
 
   });
 });

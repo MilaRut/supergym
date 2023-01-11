@@ -7,24 +7,6 @@
   color: $color;
 }
 
-// @mixin font-alumni ($weight, $fs, $lh, $color) {
-//   font-family: "Alumni Sans", "Arial", sans-serif;
-//   font-style: normal;
-//   font-weight: $weight;
-//   font-size: $fs;
-//   line-height: $lh;
-//   color: $color;
-// }
-
-// @mixin font-roboto ($weight, $fs, $lh, $color) {
-//   font-family: "Roboto Condensed", "Arial", sans-serif;
-//   font-style: normal;
-//   font-weight: $weight;
-//   font-size: $fs;
-//   line-height: $lh;
-//   color: $color;
-// }
-
 @mixin retina {
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     @content;
@@ -64,6 +46,12 @@
 }
 
 // Desktop first
+
+@mixin vp-1279 {
+  @media (max-width: ($vp-1280 - 1px)) {
+    @content;
+  }
+}
 
 @mixin vp-1199 {
   @media (max-width: ($vp-1200 - 1px)) {

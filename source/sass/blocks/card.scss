@@ -2,11 +2,17 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  min-width: 260px;
-  height: 294px;
+  // width: 260px;
+  // height: 294px;
+  // margin-right: 40px;
   background-color: $color-chambray;
   padding: 56px 27px 0 56px;
   overflow: hidden;
+
+  width: 19vw;
+  height: 24vw;
+  max-height: 294px;
+  margin-right: 40px;
 
   &::before {
     position: absolute;
@@ -22,6 +28,21 @@
   &:hover::before {
     background: $color-sapphire-opacity-89;
     z-index: 2;
+  }
+
+  @include vp-1199 {
+    // width: 268px;
+    max-width: 268px;
+    height: 39vw;
+    margin-right: 22px;
+
+  }
+
+  @include vp-767 {
+    // max-width: 226px;
+    max-height: 274px;
+    height: 92vw;
+    margin: 0;
   }
 }
 

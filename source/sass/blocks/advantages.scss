@@ -1,56 +1,71 @@
 .advantages {
   padding-left: 33px;
-  margin-bottom: 400px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .advantages .container {
   background-color: $color-ghost-white;
   margin: 0 auto;
+  padding-top: 146px;
+  padding-bottom: 89px;
+
+  @include vp-1199 {
+    padding-top: 92px;
+    padding-bottom: 92px;
+  }
+
+  @include vp-767 {
+    padding: 63px 0 59px;
+  }
 }
 
 .advantages h2 {
   @include font-settings ($ff-alumni, 600, 54px, 1.2, $color-sapphire);
   letter-spacing: 0.03em;
   margin: 0;
-  margin-bottom: 55px;
-  padding-left: 10px;
-  padding-top: 146px;
+  margin-bottom: 28px;
+  padding-right: 23px;
   text-align: center;
 
   @include vp-1199 {
     font-size: 42px;
     line-height: 1.19;
+    margin-bottom: 22px;
   }
 
   @include vp-767 {
     font-size: 32px;
     line-height: 1.18;
+    padding: 0 17px 0 0;
+    margin-bottom: 25px;
   }
 }
 
 .avantages__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   max-width: 1040px;
-  max-height: 307px;
-  padding-bottom: 91px;
   list-style: none;
   display: grid;
-  grid-template-columns: 1fr 240px 1fr;
+  grid-template-columns: auto 271px auto;
   grid-template-rows: repeat(2, 1fr);
-  column-gap: 60px;
+  column-gap: 29px;
+  row-gap: 129px;
 
   @include vp-1199 {
     max-width: 100%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 239px 1fr;
-    column-gap: 43px;
-    row-gap: 39px;
+    grid-template-rows: 1fr 259px 1fr;
+    column-gap: 28px;
+    row-gap: 22px;
   }
 
   @include vp-767 {
-    grid-template-columns: 1fr;
-    gap: 39px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -70,17 +85,37 @@
   }
 
   &--equipment {
+    position: relative;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
     background-color: $color-resolution-blue;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
     align-self: stretch;
+    margin: 26px 27px 2px 4px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      width: 340px;
+      height: 2px;
+      background-color: $color-crimson-opacity-20;
+      top: 50%;
+    }
+
+    &::before {
+      right: 300px;
+    }
+
+    &::after {
+      left: 300px;
+    }
   }
 
-  & --comfort {
+  &--comfort {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     align-self: end;
@@ -92,10 +127,49 @@
     align-self: end;
   }
 
-  @include vp-767 {
-    flex-direction: column;
-    align-items: center;
-    justify-items: center;
+  @include vp-1199 {
+    &--parking {
+      grid-column: 2 / 2;
+    }
+
+    &--equipment {
+      grid-column: 1 / 3;
+      grid-row: 2 / 3;
+      margin: 0 118px;
+      margin-top: 20px;
+
+      &::before,
+      &::after {
+        display: none;
+      }
+    }
+
+    &--comfort {
+      grid-row: 3 / 4;
+    }
+
+    &--experience {
+      grid-column: 2 / 3;
+      grid-row: 3 / 4;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      text-align: center;
+
+      &--equipment {
+        margin: 17px 0 0;
+      }
+
+      &--space,
+      &--parking,
+      &--comfort,
+      &--experience {
+        align-self: center;
+      }
+    }
   }
 }
 
@@ -110,36 +184,50 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 58px;
+    padding-top: 5px;
   }
 
   @include vp-767 {
     text-align: center;
-    font-size: 74px;
+    padding-top: 0;
   }
 }
 
-.advantages__item h4 {
-  @include font-settings ($ff-roboto, 700, 71px, 1.5, $color-default-white);
-  margin: 0;
-}
-
 .advantages__item span {
-  @include font-settings ($ff-roboto, 400, 14x, 1.5, $color-persian-blue);
+  @include font-settings ($ff-roboto, 400, 14px, 1.5, $color-persian-blue);
   display: block;
+  margin-top: -24px;
+
+  @include vp-1199 {
+    margin-top: -19px;
+  }
 }
 
 .advantages__item h3 {
-  @include font-settings ($ff-roboto, 700, 22x, 1.5, $color-sapphire);
+  @include font-settings ($ff-roboto, 700, 22px, 1.5, $color-sapphire);
   margin: 0;
+  margin-bottom: 6px;
 
   @include vp-1199 {
     font-size: 20px;
+    margin-bottom: 3px;
   }
 }
 
 .advantages p {
-  @include font-settings ($ff-roboto, 300, 16x, 1.4, $color-sapphire);
+  @include font-settings ($ff-roboto, 300, 16px, 1.4, $color-sapphire);
   margin: 0;
+  padding-right: 20px;
+  max-width: 270px;
+
+  @include vp-1199 {
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  @include vp-767 {
+    padding: 0 40px;
+  }
 }
 
 .advantages__item--equipment p,
@@ -148,7 +236,75 @@
   text-align: center;
 }
 
+.advantages__item--equipment h4 {
+  @include font-settings ($ff-roboto, 700, 74px, 1.5, $color-default-white);
+  margin: 0;
+  line-height: 1;
+  margin-bottom: 2px;
+  padding-right: 7px;
+  padding-top: 55px;
+
+  @include vp-1199 {
+    margin-bottom: 0;
+    padding-top: 33px;
+  }
+
+  @include vp-767 {
+    padding-top: 39px;
+    margin-bottom: -6px;
+  }
+}
+
+.advantages__item--equipment h3 {
+
+  font-size: 26px;
+  margin-bottom: 32px;
+
+  @include vp-1199 {
+    margin-bottom: 15px;
+    font-size: 22px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 10px;
+  }
+}
+
+.advantages__item--equipment p {
+  padding: 0 30px;
+
+  @include vp-1199 {
+    padding: 0 130px;
+  }
+
+  @include vp-767 {
+    padding: 0 60px;
+    margin-bottom: 46px;
+  }
+}
+
 .advantages__wrapper {
   display: flex;
   flex-direction: column;
+
+  &--numbers {
+    padding-left: 3px;
+
+    @include vp-1199 {
+      padding-left: 0;
+    }
+  }
+
+  &--texts {
+    padding-top: 20px;
+    padding-left: 31px;
+
+    @include vp-1199 {
+      padding-left: 30px;
+    }
+
+    @include vp-767 {
+      padding: 8px 0 0 0;
+    }
+  }
 }
