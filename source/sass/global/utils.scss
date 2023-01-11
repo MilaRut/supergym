@@ -34,6 +34,12 @@
   clip-path: inset(100%);
 }
 
+a:hover,
+button:hover {
+  opacity: 0.6;
+
+}
+
 .scroll-lock-ios {
   position: fixed;
 
