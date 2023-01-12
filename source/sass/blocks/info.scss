@@ -35,11 +35,11 @@
 }
 
 .info__content h2 {
+  @include font-settings ($ff-alumni, 600, 48px, 1.2, $color-sapphire);
   margin: 0;
   margin-bottom: 10px;
   padding-top: 38px;
   letter-spacing: 0.03em;
-  @include font-settings ($ff-alumni, 600, 48px, 1.2, $color-sapphire);
 
   @include vp-1199 {
     font-size: 42px;
@@ -57,9 +57,9 @@
 }
 
 .info__content h3 {
+  @include font-settings ($ff-roboto, 400, 18px, 1.5, $color-sapphire);
   margin: 0;
   margin-bottom: 37px;
-  @include font-settings ($ff-roboto, 400, 18px, 1.5, $color-sapphire);
 
   @include vp-1199 {
     padding-right: 19px;
@@ -74,9 +74,9 @@
 }
 
 .info__content p {
+  @include font-settings ($ff-roboto, 300, 16px, 1.5, $color-sapphire);
   margin: 0;
   margin-bottom: 8px;
-  @include font-settings ($ff-roboto, 300, 16px, 1.5, $color-sapphire);
 
   @include vp-1199 {
     margin-bottom: 24px;

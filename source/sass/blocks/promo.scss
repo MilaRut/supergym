@@ -70,15 +70,15 @@
     margin-bottom: 1px;
   }
 
-  &:before,
-  &:after {
+  &::before,
+  &::after {
     position: absolute;
     content: "";
     background-color: $color-default-white;
     height: 1px;
   }
 
-  &:before {
+  &::before {
     width: 64px;
     top: 34px;
     right: 28px;
@@ -90,7 +90,7 @@
     }
   }
 
-  &:after {
+  &::after {
     width: 88px;
     top: 129px;
     right: 4px;

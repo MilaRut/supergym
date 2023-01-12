@@ -2147,14 +2147,10 @@ button:hover {
   height: 100%;
 }
 
-.trainers {
-  padding: 67px 0 92px;
-  overflow: hidden;
-}
-
 .trainers .container {
   position: relative;
   overflow: hidden;
+  padding: 67px 103px 92px;
 }
 
 .trainers h2 {
@@ -2169,30 +2165,19 @@ button:hover {
   margin: 0 0 47px 0;
 }
 
-.trainers__swiper-wrapper {
-  position: relative;
-  width: 93.11%;
-  max-width: 1272px;
-  margin: 0 auto;
-}
-
 .trainers__list {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .trainers__nav-btn {
   position: absolute;
-  width: 103px;
+  width: 80px;
   height: 314px;
-  top: 125px;
+  top: 191px;
   border: 5px solid #ffffff;
   background-color: #ffffff;
   z-index: 10;
@@ -2200,11 +2185,11 @@ button:hover {
 }
 
 .trainers__nav-btn--prev {
-  left: 0;
+  left: 15px;
 }
 
 .trainers__nav-btn--next {
-  right: 0;
+  right: 15px;
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
@@ -2224,13 +2209,13 @@ button:hover {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  width: 19vw;
+  max-width: 260px;
+  height: 24vw;
+  max-height: 294px;
   background-color: #495a7d;
   padding: 56px 27px 0 56px;
   overflow: hidden;
-  width: 19vw;
-  height: 24vw;
-  max-height: 294px;
-  margin-right: 40px;
 }
 
 .card::before {
@@ -2250,6 +2235,12 @@ button:hover {
 }
 
 .card h3 {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1;
+  color: #ffffff;
   margin: 0;
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
@@ -2257,12 +2248,6 @@ button:hover {
   z-index: 2;
   padding: 14px 28px 0 0;
   text-align: center;
-  font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.1;
-  color: #ffffff;
 }
 
 .card__content {
@@ -2270,14 +2255,14 @@ button:hover {
 }
 
 .card p {
-  margin: 0 0 32px 0;
-  padding-left: 49px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
+  margin: 0 0 32px 0;
+  padding-left: 49px;
 }
 
 .card__list {
@@ -2309,9 +2294,9 @@ button:hover {
 }
 
 .card__img--pash {
-  -webkit-transform: scale(1.24);
-  -ms-transform: scale(1.24);
-  transform: scale(1.24);
+  -webkit-transform: scale(1.26);
+  -ms-transform: scale(1.26);
+  transform: scale(1.26);
 }
 
 .card:hover h3 {
@@ -2319,6 +2304,7 @@ button:hover {
   -ms-flex-order: -1;
   order: -1;
   padding-top: 0;
+  padding-right: 28px;
 }
 
 .card:hover .card__content {
@@ -3363,8 +3349,8 @@ button:hover {
     margin-bottom: 0;
   }
 
-  .trainers {
-    padding: 60px 0 101px;
+  .trainers .container {
+    padding: 60px 103px 101px;
   }
 
   .trainers h2 {
@@ -3375,19 +3361,17 @@ button:hover {
     margin-bottom: 31px;
   }
 
-  .trainers__swiper-wrapper {
-    width: 88.28%;
-  }
-
   .trainers__nav-btn {
-    width: 101px;
-    top: 101px;
+    top: 153px;
   }
 
   .card {
-    max-width: 268px;
+    min-width: 268px;
     height: 39vw;
-    margin-right: 22px;
+  }
+
+  .card:hover h3 {
+    padding-right: 39px;
   }
 
   .advantages {
@@ -3980,8 +3964,8 @@ button:hover {
     object-position: -46px 20px;
   }
 
-  .trainers {
-    padding: 23px 0 70px;
+  .trainers .container {
+    padding: 23px 47px 70px;
   }
 
   .trainers h2 {
@@ -3990,18 +3974,43 @@ button:hover {
     margin-bottom: 42px;
   }
 
-  .trainers__swiper-wrapper {
-    width: 90.62%;
+  .trainers__list {
+    max-width: 226px;
+    margin: 0 auto;
   }
 
   .trainers__nav-btn {
-    width: 47px;
+    width: 40px;
+    top: 106px;
+  }
+
+  .trainers__nav-btn--prev {
+    left: 0;
+    -webkit-transform: scale(0.6);
+    -ms-transform: scale(0.6);
+    transform: scale(0.6);
+  }
+
+  .trainers__nav-btn--next {
+    right: 0;
+    -webkit-transform: scale(-0.6, 0.6);
+    -ms-transform: scale(-0.6, 0.6);
+    transform: scale(-0.6, 0.6);
   }
 
   .card {
     max-height: 274px;
     height: 92vw;
     margin: 0;
+    padding: 46px 46px 0 34px;
+  }
+
+  .card p {
+    padding-left: 53px;
+  }
+
+  .card:hover h3 {
+    padding-right: 32px;
   }
 
   .advantages .container {
