@@ -54,6 +54,11 @@
 }
 
 .header__tel {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__link {
   @include font-settings ($ff-alumni, 600, 26px, 1.19, $color-default-white);
   letter-spacing: 0.03em;
   padding-top: 1px;

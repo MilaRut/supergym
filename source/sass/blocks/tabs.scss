@@ -40,7 +40,7 @@
   }
 }
 
-.tab__item {
+.tabs__item {
   @include font-settings ($ff-roboto, 400, 20px, 1.5, $color-sapphire-opacity-50);
   background-color: transparent;
   border: none;
@@ -75,7 +75,7 @@
   }
 }
 
-.tab__item.is-active {
+.tabs__item.is-active {
   color: $color-sapphire;
 
   &::after {
@@ -99,7 +99,7 @@
   }
 }
 
-.tab__item--6.is-active {
+.tabs__item--6.is-active {
   @include vp-1199 {
     &::after {
       left: 23px;
@@ -115,7 +115,7 @@
   }
 }
 
-.tab__item--12.is-active {
+.tabs__item--12.is-active {
   @include vp-1199 {
     &::after {
       left: 25px;
@@ -223,7 +223,7 @@
   &::before {
     @include font-settings ($ff-roboto, 700, 100px, 1.5, $color-whisper-opacity-48);
     position: absolute;
-    content: attr(value);
+    content: attr(data-price);
     top: -54px;
     right: -16px;
     z-index: -1;
@@ -257,7 +257,7 @@
 .tabs__btn {
   @include font-settings ($ff-roboto, 700, 12px, 1.16, $color-sapphire);
   min-width: 208px;
-  height: 66px;
+  min-height: 66px;
   padding-top: 3px;
   letter-spacing: 0.05em;
   text-transform: uppercase;

@@ -55,7 +55,7 @@
   }
 }
 
-.promo__table {
+.promo__date {
   position: relative;
   text-align: start;
   border-collapse: collapse;
@@ -103,8 +103,9 @@
   }
 }
 
-.promo__table th {
+.promo__date h4 {
   @include font-settings ($ff-roboto, 400, 18px, 1.53, $color-default-white);
+  margin: 0;
   display: block;
   text-align: start;
   padding: 3px 0 0 5px;
@@ -119,14 +120,10 @@
   }
 }
 
-.promo__table tr {
-  display: block;
-  text-align: start;
-}
-
-.promo__table td {
+.promo__date span {
   @include font-settings ($ff-roboto, 400, 14px, 1.2, $color-default-white);
   display: inline-block;
+  vertical-align: middle;
   text-align: start;
   padding: 0 0 4px 3px;
 
@@ -137,7 +134,7 @@
   }
 }
 
-.promo__table td:first-child {
+.promo__date span:first-child {
   @include font-settings ($ff-roboto, 700, 40px, 1.48, $color-default-white);
   padding-left: 5px;
 
@@ -164,8 +161,9 @@
 .promo__btn {
   min-width: 347px;
   min-height: 68px;
-  padding-top: 4px;
+  padding: 4px;
   margin-bottom: 85px;
+  text-align: center;
 
   @include vp-1199 {
     min-width: 100%;
@@ -178,7 +176,7 @@
   }
 }
 
-.promo__image {
+.promo__img-wrapper {
   max-width: 56.9%;
   min-height: 100%;
 

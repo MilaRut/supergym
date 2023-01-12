@@ -1,7 +1,6 @@
 .form__container {
   padding: 56px 50px 68px 101px;
   position: relative;
-  background-color: $color-sapphire;
 
   @include vp-1199 {
     padding: 62px 43px 68px 132px;
@@ -66,20 +65,20 @@
   border: none;
   border-bottom: 1px solid $color-light-slate-grey;
 
-  &[name="name"] {
-    margin-right: 28px;
-
-    @include vp-1199 {
-      margin-right: 59px;
-    }
-
-    @include vp-767 {
-      margin: 0 0 25px;
-    }
-  }
-
   @include vp-1199 {
     padding: 12px 0 6px;
+  }
+}
+
+.form__container input[name="name"] {
+  margin-right: 28px;
+
+  @include vp-1199 {
+    margin-right: 59px;
+  }
+
+  @include vp-767 {
+    margin: 0 0 25px;
   }
 }
 

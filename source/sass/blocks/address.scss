@@ -1,7 +1,24 @@
+.address {
+  background-color: $color-default-white;
+}
+
 .address__container {
   position: relative;
-  padding: 57px 60px 40px 121px;
+  padding: 57px 60px 46px 121px;
   border-top: 1px solid $color-light-slate-grey;
+
+  @media screen and (min-width: 1367px) {
+    &::after {
+      content: "";
+      position: absolute;
+      top: -1px;
+      right: -99vw;
+      width: 100vw;
+      height: calc(100% + 1px);
+      background-color: $color-default-white;
+      border-top: 1px solid $color-light-slate-grey;
+    }
+  }
 
   @include vp-1199 {
     padding: 62px 0 43px 130px;

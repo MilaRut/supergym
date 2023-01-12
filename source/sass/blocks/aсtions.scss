@@ -1,4 +1,4 @@
-.actions .container {
+.offers .container {
   padding-top: 149px;
   padding-bottom: 60px;
 
@@ -12,7 +12,7 @@
   }
 }
 
-.actions h2 {
+.offers h2 {
   @include font-settings ($ff-alumni, 600, 54px, 1.2, $color-sapphire);
   letter-spacing: 0.03em;
   margin: 0 0 33px;
@@ -33,12 +33,12 @@
   }
 }
 
-.actions__wrapper {
+.offers__wrapper {
   display: flex;
   justify-content: center;
 }
 
-.actions__content {
+.offers__content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 40px;
@@ -57,7 +57,7 @@
   }
 }
 
-.actions__left-col {
+.offers__left-col {
   display: flex;
 
   @include vp-1199 {
@@ -70,7 +70,7 @@
   }
 }
 
-.actions__text {
+.offers__text {
   width: 50%;
   background-color: $color-torch-red;
   padding: 40px 0 39px 45px;
@@ -86,7 +86,7 @@
   }
 }
 
-.actions__text h3 {
+.offers__text h3 {
   @include font-settings ($ff-roboto, 700, 28px, 1, $color-default-white);
   margin: 0 0 4px;
 
@@ -95,7 +95,7 @@
   }
 }
 
-.actions__text h4 {
+.offers__text h4 {
   @include font-settings ($ff-roboto, 700, 70px, 1, $color-default-white);
   margin: 0 0 19px;
 
@@ -104,7 +104,7 @@
   }
 }
 
-.actions__text p {
+.offers__text p {
   @include font-settings ($ff-roboto, 400, 18px, 1.4, $color-default-white);
   margin: 0 0 189px;
 
@@ -113,7 +113,7 @@
   }
 }
 
-.actions__image {
+.offers__img-wrapper {
   width: 50%;
   overflow: hidden;
 
@@ -126,10 +126,11 @@
   }
 }
 
-.actions__image img {
+.offers__img-wrapper img {
   object-fit: cover;
   transform: scale(1.4);
   object-position: 17px -62px;
+  height: 100%;
 
   @include vp-1199 {
     transform: scale(1.2);
@@ -145,7 +146,7 @@
   }
 }
 
-.actions__right-col {
+.offers__right-col {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -160,7 +161,7 @@
   }
 }
 
-.actions__action {
+.offers__offer {
   padding: 19px 28px;
   border: 10px solid;
   border-image-slice: 1;
@@ -200,7 +201,7 @@
   }
 }
 
-.actions__action h3 {
+.offers__offer h3 {
   @include font-settings ($ff-roboto, 700, 26px, 1.5, $color-resolution-blue);
   margin: 0 0 2px;
 
@@ -209,12 +210,12 @@
   }
 }
 
-.actions__action p {
+.offers__offer p {
   @include font-settings ($ff-roboto, 400, 16px, 1.4, $color-resolution-blue);
   margin: 0 0 75px;
 }
 
-.actions__link {
+.offers__link {
   @include font-settings ($ff-roboto, 700, 12px, 1.16, $color-resolution-blue);
   display: block;
   text-transform: uppercase;
