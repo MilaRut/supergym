@@ -4,7 +4,9 @@
   padding: 67px 103px 92px;
 
   @include vp-1199 {
-    padding: 60px 103px 101px;
+    padding: 60px 80px 101px;
+    max-width: 725px;
+    margin: 0 auto;
   }
 
   @include vp-767 {
@@ -40,7 +42,7 @@
   cursor: grab;
 
   @include vp-767 {
-    max-width: 226px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
@@ -66,11 +68,21 @@
 
   @include vp-1199 {
     top: 153px;
+
+    &--prev {
+      left: -8px;
+    }
+
+    &--next {
+      right: -8px;
+    }
   }
 
   @include vp-767 {
     width: 40px;
-    top: 106px;
+    // top: 24%;
+    top: 8.5%;
+    height: 100%;
 
     &--prev {
       left: 0;

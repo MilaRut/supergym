@@ -23,6 +23,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  object-position: 100% 0;
   border: none;
 }
 
@@ -47,8 +48,9 @@
   }
 
   @include vp-767 {
-    top: 16.5%;
-    left: 38.7%;
+    top: 33px;
+    left: 50%;
+    transform: translateX(-35px);
   }
 }
 

@@ -1,9 +1,9 @@
 import Swiper, {Navigation} from 'swiper';
 
-const initSwiper = (swiper) => {
+const initTrainersSwiper = (swiper) => {
   if (swiper) {
     // eslint-disable-next-line
-    new Swiper('#swiper', {
+    new Swiper('#trainers-swiper', {
       modules: [Navigation],
       navigation: {
         nextEl: '.swiper-button-next',
@@ -46,4 +46,4 @@ const initSwiper = (swiper) => {
   }
 };
 
-export {initSwiper};
+export {initTrainersSwiper};

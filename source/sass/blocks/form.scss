@@ -97,3 +97,7 @@
     margin-top: 12px;
   }
 }
+
+.form ::placeholder {
+  color: $color-default-white;
+}

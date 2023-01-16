@@ -1,8 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {setupVideo} from './modules/video';
 import {initTabs} from './modules/tabs';
-import {initSwiper} from './modules/slider';
-import {initSlider} from './modules/reviews-slider';
+import {initTrainersSwiper} from './modules/trainers-swiper';
+import {initReviewsSwiper} from './modules/reviews-swiper';
 
 
 // ---------------------------------
@@ -22,8 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     setupVideo();
     initTabs();
-    initSwiper(swiper);
-    initSlider();
+    initTrainersSwiper(swiper);
+    initReviewsSwiper(swiper);
   });
 });
 

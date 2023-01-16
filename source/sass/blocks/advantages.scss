@@ -1,20 +1,14 @@
-.advantages {
-  padding-left: 33px;
-
-  @include vp-1199 {
-    padding: 0;
-  }
-}
-
 .advantages .container {
   background-color: $color-ghost-white;
   margin: 0 auto;
   padding-top: 146px;
   padding-bottom: 89px;
+  padding-left: 136px;
 
   @include vp-1199 {
     padding-top: 92px;
     padding-bottom: 92px;
+    padding-left: 44px;
   }
 
   @include vp-767 {

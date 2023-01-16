@@ -32,10 +32,17 @@
   }
 
   @include vp-767 {
-    max-height: 274px;
-    height: 92vw;
+    min-width: 226px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    min-height: 86vw;
     margin: 0;
-    padding: 46px 46px 0 34px;
+    // padding: 46px 5px 0 34px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -46,6 +53,11 @@
   z-index: 2;
   padding: 14px 28px 0 0;
   text-align: center;
+
+  @include vp-767 {
+    margin-top: auto;
+    padding-bottom: 20px;
+  }
 }
 
 .card__content {
@@ -58,7 +70,8 @@
   padding-left: 49px;
 
   @include vp-767 {
-    padding-left: 53px;
+    padding-left: 0;
+    text-align: center;
   }
 }
 
@@ -67,6 +80,10 @@
   padding-left: 15px;
   text-align: start;
   list-style: disc;
+
+  @include vp-767 {
+    padding-left: 50px;
+  }
 }
 
 .card__item {
@@ -98,7 +115,8 @@
   }
 
   @include vp-767 {
-    padding-right: 32px;
+    padding: 0;
+    margin-top: 15px;
   }
 }
 
