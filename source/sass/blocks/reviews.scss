@@ -9,8 +9,6 @@
   }
 
   @include vp-767 {
-    // padding-top: 24px;
-    // padding-bottom: 70px;
     padding: 24px 0 70px;
   }
 }
@@ -126,11 +124,12 @@
 
 .reviews__btn {
   position: absolute;
-  background-color: transparent;
+  background: url("../img/sprite/slider-arrow.svg") center no-repeat;
   top: 64.5%;
   border: none;
   z-index: 100;
   cursor: pointer;
+
 
   &--prev {
     transform: scale(1.2);

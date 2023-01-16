@@ -2192,21 +2192,19 @@ button:hover {
 
 .trainers__nav-btn {
   position: absolute;
-  width: 80px;
-  height: 314px;
-  top: 191px;
-  border: 5px solid #ffffff;
-  background-color: #ffffff;
+  top: 326px;
+  border: none;
+  background: url("../img/sprite/slider-arrow.svg") center no-repeat;
   z-index: 10;
   cursor: pointer;
 }
 
 .trainers__nav-btn--prev {
-  left: 15px;
+  left: 41px;
 }
 
 .trainers__nav-btn--next {
-  right: 15px;
+  right: 41px;
   -webkit-transform: scale(-1, 1);
   -ms-transform: scale(-1, 1);
   transform: scale(-1, 1);
@@ -2795,7 +2793,7 @@ button:hover {
 
 .reviews__btn {
   position: absolute;
-  background-color: transparent;
+  background: url("../img/sprite/slider-arrow.svg") center no-repeat;
   top: 64.5%;
   border: none;
   z-index: 100;
@@ -3437,15 +3435,15 @@ button:hover {
   }
 
   .trainers__nav-btn {
-    top: 153px;
+    top: 288px;
   }
 
   .trainers__nav-btn--prev {
-    left: -8px;
+    left: 18px;
   }
 
   .trainers__nav-btn--next {
-    right: -8px;
+    right: 18px;
   }
 
   .card {
@@ -4101,8 +4099,7 @@ button:hover {
 
   .trainers__nav-btn {
     width: 40px;
-    top: 8.5%;
-    height: 100%;
+    top: 53.5%;
   }
 
   .trainers__nav-btn--prev {

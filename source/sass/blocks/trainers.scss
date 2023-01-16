@@ -49,40 +49,36 @@
 
 .trainers__nav-btn {
   position: absolute;
-  width: 80px;
-  height: 314px;
-  top: 191px;
-  border: 5px solid $color-default-white;
-  background-color: $color-default-white;
+  top: 326px;
+  border: none;
+  background: url("../img/sprite/slider-arrow.svg") center no-repeat;
   z-index: 10;
   cursor: pointer;
 
   &--prev {
-    left: 15px;
+    left: 41px;
   }
 
   &--next {
-    right: 15px;
+    right: 41px;
     transform: scale(-1, 1);
   }
 
   @include vp-1199 {
-    top: 153px;
+    top: 288px;
 
     &--prev {
-      left: -8px;
+      left: 18px;
     }
 
     &--next {
-      right: -8px;
+      right: 18px;
     }
   }
 
   @include vp-767 {
     width: 40px;
-    // top: 24%;
-    top: 8.5%;
-    height: 100%;
+    top: 53.5%;
 
     &--prev {
       left: 0;
