@@ -550,18 +550,26 @@
               <h2>Контакты</h2>
               <div class="address__content">
                 <div class="address__primary">
-                  <h3>Адрес:</h3>
-                  <address>
-                    <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
-                  </address>
-                  <h3>График работы:</h3>
-                  <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                  <div class="address__address">
+                    <h3>Адрес:</h3>
+                    <address>
+                      <p>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</p>
+                    </address>
+                  </div>
+                  <div class="address__schedule">
+                    <h3>График работы:</h3>
+                    <p>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</p>
+                  </div>
                 </div>
                 <div class="address__secondary">
-                  <h3>Телефон:</h3>
-                  <a href="tel:+78005555555">8-800-555-55-55</a>
-                  <h3>Email:</h3>
-                  <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  <div class="address__phone">
+                    <h3>Телефон:</h3>
+                    <a href="tel:+78005555555">8-800-555-55-55</a>
+                  </div>
+                  <div class="address__email">
+                    <h3>Email:</h3>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -573,59 +581,61 @@
     <footer class="footer">
       <div class="container">
         <nav class="footer__nav">
-          <a href="#noscroll" class="footer__logo" aria-label="Логотип фитнес-клуба.">
-            <svg class="footer__logo-img" width="88" height="32">
+          <a href="#noscroll" class="footer__logo footer__logo--desktop" aria-label="Логотип фитнес-клуба.">
+            <svg class="footer__logo-img" width="87" height="33">
               <use xlink:href="./img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <div class="footer__lists-wrapper">
-            <ul class="footer__list footer__list--primary">
-              <li class="footer__item">
-                <a href="#noscroll" class="footer__link">Услуги</a>
-              </li>
-              <li class="footer__item">
-                <a href="#noscroll" class="footer__link">Абонементы</a>
-              </li>
-            </ul>
-            <ul class="footer__list footer__list--secondary">
-              <li class="footer__item">
-                <a href="#noscroll" class="footer__link">Акции</a>
-              </li>
-              <li class="footer__item">
-                <a href="#noscroll" class="footer__link">Тренеры</a>
-              </li>
-              <li class="footer__item">
-                <a href="#noscroll" class="footer__link">Расписание</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__socials socials">
-            <ul class="socials__list">
-              <li class="socials__item">
-                <a href="#noscroll">
-                  <svg class="socials__logo-img" width="25" height="25">
-                    <use xlink:href="./img/sprite.svg#socials-vk"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#noscroll">
-                  <svg class="socials__logo-img" width="25" height="25">
-                    <use xlink:href="./img/sprite.svg#socials-ok"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="socials__item">
-                <a href="#noscroll">
-                  <svg class="socials__logo-img" width="25" height="25">
-                    <use xlink:href="./img/sprite.svg#socials-reddit"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-
+          <ul class="footer__list">
+            <li class="footer__item footer__item--mobile">
+              <a href="#noscroll" class="footer__logo footer__logo--mobile" aria-label="Логотип фитнес-клуба.">
+                <svg class="footer__logo-img" width="67" height="15">
+                  <use xlink:href="./img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a href="#noscroll" class="footer__link">Услуги</a>
+            </li>
+            <li class="footer__item">
+              <a href="#noscroll" class="footer__link">Абонементы</a>
+            </li>
+            <li class="footer__item">
+              <a href="#noscroll" class="footer__link">Акции</a>
+            </li>
+            <li class="footer__item">
+              <a href="#noscroll" class="footer__link">Тренеры</a>
+            </li>
+            <li class="footer__item">
+              <a href="#noscroll" class="footer__link">Расписание</a>
+            </li>
+          </ul>
         </nav>
+        <div class="footer__socials socials">
+          <ul class="socials__list">
+            <li class="socials__item">
+              <a href="#noscroll">
+                <svg class="socials__logo-img" width="25" height="25">
+                  <use xlink:href="./img/sprite.svg#socials-vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#noscroll">
+                <svg class="socials__logo-img" width="25" height="25">
+                  <use xlink:href="./img/sprite.svg#socials-ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a href="#noscroll">
+                <svg class="socials__logo-img" width="25" height="25">
+                  <use xlink:href="./img/sprite.svg#socials-reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </div>
